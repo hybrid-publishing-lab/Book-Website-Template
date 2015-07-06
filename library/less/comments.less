@@ -1,0 +1,347 @@
+/*
+
+WP-Bootstrap - Comments
+
+*/
+
+
+.comments-area {
+	border-top:2px solid @meson-gray;
+
+	.comments-header {
+		display: block;
+		position:relative;
+		width: 100%;
+		height: 40px;
+		margin-top:25px;
+		.comments-amount {
+			display: block;
+			position: relative;
+			font-family: 'osBold';
+			font-size:14px;
+			color: white;
+			.box {
+				display: inline-block;
+				position:relative;
+				float:left;
+				width:auto;
+				height:34px;
+				background-color:white;
+				background-image: url(../../../images/icons/comment-box.svg);
+				background-repeat: no-repeat;
+				background-position: center bottom;
+				overflow: visible;
+				.amount {
+					display:block;
+					height:28px;
+					width:auto;
+					border:1px solid black;
+				
+					-webkit-border-radius: 4px 4px 4px 4px;
+					-moz-border-radius: 4px 4px 4px 4px;
+					border-radius: 4px 4px 4px 4px;
+					padding-left:6px;
+					padding-right:6px;
+					padding-top:1px;
+					padding-bottom:1px;
+					background-color:black;
+					color:white;
+					display:block;
+				}
+			}
+			.label {
+					position:relative;
+					float:left;
+					margin-left:10px;
+					text-transform: uppercase;
+					font-family: 'osBold';
+					color:black;
+					font-size:14px;
+					padding-top:8px;
+					letter-spacing: 1px;
+				}
+			
+		}
+		.comment-reply {
+			display:block;
+			position:absolute;
+			right:0px;
+			top:0px;
+			.comment-reply-button {
+				-webkit-border-radius: 4px 4px 4px 4px;
+				-moz-border-radius: 4px 4px 4px 4px;
+				border-radius: 4px 4px 4px 4px;
+				padding:15px;
+				padding-top:5px;
+				padding-bottom:5px;
+				border-color: @meson-gray;
+				background-color: @meson-gray;
+				color:black;
+				font-family: 'osBold';
+				text-transform:uppercase;
+				box-shadow: none;
+				border: none;
+				border-image-source: none;
+				border-image-slice: none;
+				border-image-width: none;
+				border-image-outset: none;
+				border-image-repeat: none;
+
+			}
+
+		}
+	}
+	.comments {
+		display:block;
+		position:relative;
+		clear:left;
+		margin-top:15px;
+		.comment {
+			position: relative;
+			clear:left;
+			margin-top:15px;
+			.comment-time {
+				font-family: 'osItalic';
+				font-size:12px;
+				color: @meson-gray-darker;
+			}
+			.comment-author {
+				font-family: 'osBold';
+				font-size:12px;
+				color: black;
+			}
+			.comment-body {
+				font-family: 'osRegular';
+				font-size:12px;
+				color: @meson-gray-darker;
+			}
+		}
+	}
+	.comment-form {
+		background-color:white !important;
+		.form-submit input[type='submit'] {
+			font-size:12px;
+		}
+	}
+}
+
+#commentLink {
+	position: absolute;
+	right:20px;
+	top:120px;
+	.comments-amount {
+		display: block;
+		position: relative;
+		font-family: 'osBold';
+		font-size:14px;
+		color: white;
+		.box {
+			display: inline-block;
+			position:relative;
+			float:left;
+			width:auto;
+			height:34px;
+			background-color:white;
+			background-image: url(../../../images/icons/comment-box.svg);
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			overflow: visible;
+			.amount {
+				display:block;
+				height:28px;
+				width:auto;
+				border:1px solid black;
+			
+				-webkit-border-radius: 4px 4px 4px 4px;
+				-moz-border-radius: 4px 4px 4px 4px;
+				border-radius: 4px 4px 4px 4px;
+				padding-left:6px;
+				padding-right:6px;
+				padding-top:1px;
+				padding-bottom:1px;
+				background-color:black;
+				color:white;
+				display:block;
+			}
+		}
+		.label {
+				position:relative;
+				float:left;
+				margin-left:10px;
+				text-transform: uppercase;
+				font-family: 'osBold';
+				color:black;
+				font-size:14px;
+				padding-top:8px;
+				letter-spacing: 1px;
+				a {
+					border-bottom:2px solid black;
+				}
+			}
+		@media (max-width: @grid-float-breakpoint-max) {
+			display:none;
+		}
+	}
+}
+
+#comments{
+	line-height: 24px;
+}
+
+ol.commentlist,
+ol.commentlist ul.children{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.comment .vcard > div{
+	margin-top: 8px;
+	padding: 0 10px;
+}
+
+ol.commentlist time{
+	font-size: .8em;
+	color: #eeeeee;
+}
+
+ol.commentlist div.comment-author{
+	position: relative;
+}
+
+ol.commentlist a.comment-edit-link{
+	color: #ffffff;
+	text-decoration: none;
+	padding-left: 5px;
+}
+
+ol.commentlist span.edit-comment{
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+ol.commentlist li.bypostauthor{
+	background-color: #dddddd;
+}
+
+ol.commentlist ul.children li{
+	background-color: #cccccc;
+}
+
+ol.commentlist ul.children li ul.children li{
+	background-color: #bbbbbb;
+}
+
+ol.commentlist ul.children li ul.children li ul.children li{
+	background-color: #aaaaaa;
+}
+
+ol.commentlist article{
+	border-bottom: none !important;
+}
+
+a.comment-reply-link{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	.btn;
+	.btn-sm;
+	.btn-success;
+}
+
+#cancel-comment-reply-link{
+	.btn;
+	.btn-xs;
+	.btn-warning;
+	margin-left: 1em;
+}
+
+#comment-nav ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+#comment-form-elements{
+	list-style-type: none;
+	margin: 0;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment{
+	.form-group;
+
+	input,
+	textarea{
+		.form-control;
+	}
+
+	textarea{
+		height: auto;
+	}
+}
+
+.form-allowed-tags{
+	code{
+		white-space: normal;
+	}
+}
+
+.form-submit{
+	input[type='submit']{
+		-webkit-border-radius: 4px 4px 4px 4px;
+		-moz-border-radius: 4px 4px 4px 4px;
+		border-radius: 4px 4px 4px 4px;
+		padding:15px;
+		padding-top:5px;
+		padding-bottom:5px;
+		border-color: @meson-gray;
+		background-color: @meson-gray;
+		color:black;
+		font-family: 'osBold';
+		text-transform:uppercase;
+		box-shadow: none;
+		border: none;
+		border-image-source: none;
+		border-image-slice: none;
+		border-image-width: none;
+		border-image-outset: none;
+		border-image-repeat: none;
+	}
+}
+
+.comment .vcard .avatar{
+	padding-right: 0;
+}
+
+.comment .vcard .comment-text{
+	margin-left: 0;
+}
+
+img.avatar{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-left: 1px solid #ddd;
+	
+}
+
+ol.commentlist li{
+	padding-right: 10px;
+	background-color: #F0F0F0;
+}
+
+#pings{
+	margin-bottom: 9px;
+}
+
+ol.pinglist{
+	list-style-type: none;
+	margin: 0 0 9px 0;
+}
+
+ol.commentlist #respond{
+	padding: 5px 10px;
+}

@@ -1,0 +1,122 @@
+.chaptersContent {
+	&#content {
+		height:100%;
+	}
+	.chapters-scroll {
+		height:100%;
+		overflow: auto;
+	}
+	.page-header.page-header-blog {
+		&.chapter-header-blog {
+			position:absolute;
+			left:0px;
+			z-index:200;
+			background-color:white;
+		}
+		width:100%;
+		.blog-detail-title-line {
+			display:block;
+			position: relative;
+			min-height: 70px;
+			
+			padding-top:10px;
+			padding-bottom:10px;
+
+
+			.backButtonBlock {
+				display:block;
+				position:relative;
+				float:left;
+				height: 50px;
+				
+				border-right: 2px solid @meson-gray;
+
+				.backButton {
+					display: block;
+					position:relative;
+					float:left;
+					width:50px;
+					height:50px;
+					padding-top:15px;
+					padding-left:20px;
+					background-color: @meson-gray;
+				}
+				.small_titles {
+					display: block;
+					margin-top:15px;
+					position:relative;
+					float:left;
+					margin-left:20px;
+				}
+			}
+			@media (max-width: @tabletMax) {
+				
+				.backButtonBlock{
+					border-right: none;
+					.small_titles {
+						display: none;
+					}
+				}
+			}
+			@media (max-width: @tabletMin) {
+				.blog-entry-title-line {
+				}
+			}
+
+			.blog-entry-title-line {
+				display:block;
+				padding-left:30px;
+				position:relative;
+				
+				.entry-title {
+					display:table-cell;
+					vertical-align: middle;
+
+					font-family: 'osBold';
+					font-size: 16px;
+					height: 50px;
+					overflow:hidden;
+				}
+				.entry-info {
+					font-family: 'osItalic';
+					font-size: 14px;
+					color: #999;
+				}
+			}
+			.blog-entry-title-line-buttons {
+				text-align:right;
+				padding-top:3px;
+			}
+
+			.btn-openaccess {
+				display: block;
+				width:100%;
+				background: #fff;
+				border: 2px solid #000;
+				color: #000;
+				text-align: center;
+				font-size: @font-size-md;
+				font-family: 'osBold';
+				-webkit-border-radius: 3px;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px; 
+				padding: 4px 0px;  
+				margin: 0 1px; 
+				@media (max-width: @screen-sm-min) {
+				max-width: 330px;
+				margin: 20px auto 0;
+				}
+			}
+
+			a.btn-openaccess {
+				text-decoration: none;
+			}
+
+			a.btn-openaccess:hover {
+				background: #3d7a80;
+			}
+
+		}
+	}
+}
